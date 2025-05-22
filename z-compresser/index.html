@@ -1,22 +1,10 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="./src/style.css">
-  </head>
-  <body>
-    <script type="module" src="/src/main.js"></script>
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video Compression App</title>
-
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
   <div class="container">
@@ -28,22 +16,20 @@
             <h2 class="username">Sujan</h2>
           </div>
           <div class="profile-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="7" r="4"/>
-                <path d="M5.5 21a6.5 6.5 0 0 1 13 0"/>
-              </svg>
-              
+            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="7" r="4"/>
+              <path d="M5.5 21a6.5 6.5 0 0 1 13 0"/>
+            </svg>
           </div>
         </div>
 
         <div class="compress-card">
           <div class="compress-card-bg">
-            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2000&auto=format&fit=crop" alt="Background">
+            <img src="https://plus.unsplash.com/premium_photo-1683288706414-e678ce71d7ac?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGRvd25sb2FkJTIwdmlkZW9zfGVufDB8fDB8fHww" alt="Background">
           </div>
           <div class="compress-card-content">
             <div class="image-container">
               <div class="image-wrapper">
-                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=1000&auto=format&fit=crop" alt="Compress Video Files">
                 <div class="image-overlay">
                   <div class="plus-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,198 +41,39 @@
             </div>
             <h3 class="compress-title">Compress Video files</h3>
             <p class="compress-subtitle">Compress the larger and save space.</p>
-            <button class="upload-button">Upload Now</button>
+            <input type="file" id="fileInput" accept="video/*" multiple style="display: none;">
+            <button class="upload-button" onclick="document.getElementById('fileInput').click()">Upload Now</button>
           </div>
         </div>
 
         <div class="recent-uploads">
           <h3 class="recent-title">Recent uploads</h3>
-
-          <div class="video-item">
-            <div class="video-info">
-              <div class="video-thumbnail">
-                <img src="https://images.unsplash.com/photo-1682687982501-1e58ab814714?q=80&w=500&auto=format&fit=crop" alt="Video 1">
-                <div class="thumbnail-overlay">
-                  <svg class="play-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 3L19 12L5 21V3Z" fill="white"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="video-details">
-                <p class="video-name">1554df_123.mp4</p>
-                <p class="video-size">12.09MB</p>
-              </div>
-            </div>
-            <button class="delete-button">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6H5H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </div>
-
-          <div class="video-item">
-            <div class="video-info">
-              <div class="video-thumbnail">
-                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=500&auto=format&fit=crop" alt="">
-                <div class="thumbnail-overlay">
-                  <svg class="play-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 3L19 12L5 21V3Z" fill="white"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="video-details">
-                <p class="video-name">VID3689_22.mp4</p>
-                <p class="video-size">82MB</p>
-              </div>
-            </div>
-            <button class="delete-button">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6H5H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </div>
-
-          <div class="video-item">
-            <div class="video-info">
-              <div class="video-thumbnail">
-                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=500&auto=format&fit=crop" alt="Video 3">
-                <div class="thumbnail-overlay">
-                  <svg class="play-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 3L19 12L5 21V3Z" fill="white"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="video-details">
-                <p class="video-name">VID3689_22.mp4</p>
-                <p class="video-size">55MB</p>
-              </div>
-            </div>
-            <button class="delete-button">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6H5H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </div>
-
-          <div class="video-item">
-            <div class="video-info">
-              <div class="video-thumbnail">
-                <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?q=80&w=500&auto=format&fit=crop" alt="Video 4">
-                <div class="thumbnail-overlay">
-                  <svg class="play-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 3L19 12L5 21V3Z" fill="white"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="video-details">
-                <p class="video-name">VID3689_22.mp4</p>
-                <p class="video-size">457MB</p>
-              </div>
-            </div>
-            <button class="delete-button">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6H5H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
+          
+          <div id="uploadsList" class="uploads-placeholder">
+            No uploads yet
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="panel">
-      <div class="panel-content">
-        <div class="panel-header">
-          <button class="back-button">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <h2 class="panel-title">Compress video</h2>
-        </div>
-
-        <div class="video-preview">
-          <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=1000&auto=format&fit=crop" alt="Video preview">
-          <div class="preview-overlay">
-            <div class="big-play-button">
-              <svg class="big-play-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 3L19 12L5 21V3Z" fill="white"/>
-              </svg>
-            </div>
-          </div>
-          <div class="video-info-bar">
-            <p class="video-filename">VID3450_899.mp4</p>
-            <button class="edit-button">
-              <svg class="edit-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 3C17.2626 2.73735 17.5744 2.52901 17.9176 2.38687C18.2608 2.24473 18.6286 2.17157 19 2.17157C19.3714 2.17157 19.7392 2.24473 20.0824 2.38687C20.4256 2.52901 20.7374 2.73735 21 3C21.2626 3.26264 21.471 3.57444 21.6131 3.9176C21.7553 4.26077 21.8284 4.62856 21.8284 5C21.8284 5.37143 21.7553 5.73923 21.6131 6.08239C21.471 6.42555 21.2626 6.73735 21 7L7.5 20.5L2 22L3.5 16.5L17 3Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Edit
-            </button>
-          </div>
-        </div>
-
-        <h3 class="section-title">Compress</h3>
-
-        <div class="format-section">
-          <p class="format-label">Output file format</p>
-          <div class="format-options">
-            <button class="format-button active">mp4</button>
-            <button class="format-button">mkv</button>
-            <button class="format-button">mov</button>
-          </div>
-        </div>
-
-        <div class="method-section">
-          <p class="method-label">Compression Method</p>
-          <div class="method-dropdown">
-            <span>Target by size</span>
-            <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-        </div>
-
-        <div class="target-size-section">
-          <div class="size-header">
-            <p class="size-label">Target Size (%)</p>
-            <p class="size-value">22</p>
-          </div>
-          <div class="slider-container">
-            <div class="slider-fill"></div>
-            <div class="slider-thumb"></div>
-          </div>
-          <div class="slider-labels">
-            <span>Min</span>
-            <span>Max</span>
-          </div>
-        </div>
-
-        <div class="size-row">
-          <p class="size-label">Initial Size</p>
-          <p class="size-value">21.08MB</p>
-        </div>
-
-        <div class="size-row">
-          <div class="estimated-size">
-            <p class="size-label">Estimated</p>
-            <p class="size-label">Compressed Size</p>
-          </div>
-          <p class="size-value">3.07MB - 4.5MB</p>
-        </div>
-
-        <button class="compress-button">
-          Compress
-          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
       </div>
     </div>
   </div>
+
+  <script type="module" src="/src/main.js"></script>
+
 </body>
 </html>
-  </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
